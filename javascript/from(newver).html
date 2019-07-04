@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	function validate()
+	{
+		flag=0;
+
+		cname=document.myform.take_name.value;
+		if(cname==""){
+			document.getElementById("typename").innerHTML="please enter name";
+			document.myform.take_name.style.borderColor="red";
+		flag++
+
+		}
+		else{
+			document.getElementById("typename").innerHTML="";
+			document.myform.take_name.style.borderColor="initial";
+
+		}
+		paswd=document.myform.take_password.value;
+		if(paswd==""){
+		    document.getElementById("typepassword").innerHTML="please enter password";
+			document.myform.take_password.style.borderColor="red";
+			flag++
+			
+		}
+		else if(paswd.length>8)
+		{
+			document.getElementById("typepassword").innerHTML="password length should less than 8";
+			document.myform.take_password.style.borderColor="red";
+		}
+		else
+		{
+			document.getElementById("typepassword").innerHTML="";
+			document.myform.take_password.style.borderColor="initial";	
+		}
+		email=document.myform.take_email.value;
+		var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.(A-Za-z]{2,4})$/;
+		if(email==""){
+		document.getElementById("typemail").innerHTML="please enter email";
+			document.myform.take_email.style.borderColor="red";
+			flag++
+		}
+		else{
+			document.getElementById("typemail").innerHTML="";
+			document.myform.take_email.style.borderColor="initial";
+
+		}
+		gend=document.myform.take_gender.value;
+		if(gend==""){
+		document.getElementById("typegender").innerHTML="please selsect ur gender";
+			document.getElementById("typegender1").style.color="red";
+			flag++
+		}
+		else{
+			document.getElementById("typegender").innerHTML="";
+			document.getElementById("typegender1").style.color="initial";
+
+		}		
+			adrs=document.myform.take_address.value;
+		if(adrs==""){
+			document.getElementById("typeaddress").innerHTML="please enter address";
+			document.myform.take_address.style.borderColor="red";
+		flag++;
+
+		}
+		else{
+			document.getElementById("typeaddress").innerHTML="";
+			document.myform.take_address.style.borderColor="initial";
+
+		}
+		hobby=document.myform.take_hobbies.value;
+		if(hobby==""){
+			document.getElementById("typehobbies").innerHTML="please enter hobbies";
+			document.myform.take_hobbies.style.borderColor="red";
+		flag++;
+
+		}
+		else{
+			document.getElementById("typehobbies").innerHTML="";
+			document.myform.take_hobbies.style.borderColor="initial";
+		}
+		tele=document.myform.take_telephone.value;
+		if(tele==""){
+		document.getElementById("typetelephone").innerHTML="please enter number";
+			document.myform.take_telephone.style.borderColor="red";
+			flag++
+		}
+		else{
+			document.getElementById("typetelephone").innerHTML="";
+			document.myform.take_telephone.style.borderColor="initial";
+}
+
+
+
+
+		if(flag>0){
+			return false;
+		}
+
+	
+
+
+
+
+
+}
+	
+ 		
+
+
+
+
+
+</script>
+
+
+
+
+
+	</script>
+</head>
+<body>
+	<form action="#"  name="myform" onsubmit="return validate();">
+
+		<table>
+		<h1><center>customer registratiom</center></h1>
+		<tr>
+	<td> customer name:</td>
+	<td>	<input type="text" name="take_name" size="40" ><br></td>
+	<td>    <label id="typename" ></label></td>
+		</tr>
+		<tr>
+	<td>	<label>password:</label></td>
+	<td>	<input type="password" name="take_password" size="12"><br></td>
+	<td>	<label id="typepassword"></label></td>
+		</tr>
+			<tr>
+	<td>	<label>email:</label></td>
+	<td>	<input type="email" name="take_email" size="15"><br></td>
+	<td>	<label id="typemail"></label></td>
+		</tr>
+	<tr>
+	    <td>gender:</td>
+	    <td><label id="typegender1">
+	    	<input type="radio" name="take_gender" value="male" >male
+		    <input type="radio" name="take_gender" value="female" >female</label></td>
+	    <td><label id="typegender"</label></td>
+	</tr>
+		<tr>
+	<td><label>address:</label></td>
+	<td><textarea rows="4" cols="40" name="take_address"></textarea>><br></td>
+	<td><label id="typeaddress"></label></td>
+		</tr>
+				<tr>
+	<td><label>hobbies:</label></td>
+	<td><select name="take_hobbies">
+		    <option></option>
+			<option>select hobbies</option>
+			<option >swimming</option>
+			<option >games</option>
+			<option >travelling</option>
+		</select></td>
+
+	<td><label id="typehobbies"></label></td>
+		
+
+		</tr>
+		<tr>
+	<td>	<label>telephone no:</label></td>
+	<td>	<input type="text" name="take_telephone" size="10" ><br></td>
+	<td>	<label id="typetelephone"></label></td>
+		</tr>
+
+<tr>
+		<td><input type="submit" value="submit"></td>
+	</tr>
+
+
+</table>		
+
+
+</body>
+</html>

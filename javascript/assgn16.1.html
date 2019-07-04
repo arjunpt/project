@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+			var subject=new Array("english","maths","chemistry");
+	
+	alert("please enter the mark of arun");
+	 	subject[0]=prompt("enter the mark of sub 1");
+	 	subject[1]=prompt("enter the mark of sub 2");
+	 	subject[2]=prompt("enter the mark of sub 3");
+	 	
+	 	document.write(" mark of arun :"+ subject[0]+","+subject[1]+","+ subject[2]+"<br>");
+
+	 	std=(subject[0]+subject[1]+subject[2]);
+	 	document.write("total is" +std+"<br>" );
+	 	alert("please enter the mark of vishnu");
+	    subject[0]=prompt("enter the mark of sub 1");
+	 	subject[1]=prompt("enter the mark of sub 2");
+	 	subject[2]=prompt("enter the mark of sub 3");
+	 	
+	 	document.write("mark of vishnu :" + subject[0]+","+subject[1]+","+subject[2]+"<br>");
+	 	 std2=(subject[0]+subject[1]+subject[2]);
+        document.write("total is"+std2+"<br>");
+
+      if(std<std2){
+      	 std3=std2-std;
+      	document.write("midhun has got "+std3+ " marks more than Arun");
+      }
+      else{
+      	alert("ojk");
+      }
+
+		
+	</script>
+</head>
+<body>
+	
+
+</body>
+</html>

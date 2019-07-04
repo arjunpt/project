@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>string-palindrome</title>
+	<script type="text/javascript">
+		
+			revString = ""; //reverse string..
+			inpString = prompt("enter the name");
+			i = inpString.length;
+			document.write(inpString);
+			for (var j = i; j >= 0; j--) {
+				revString = revString + inpString.charAt(j);
+				//document.write(revString + "<br>");
+			}
+			if (inpString == revString) {
+				alert(inpString + " is a palindrome.");
+			}
+			else{
+				alert(inpString + " is not a palindrome.");
+			}
+		
+		
+	</script>
+</head>
+<body>
+    
+</body>
+</html>

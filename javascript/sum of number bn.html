@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+
+	<script type="text/javascript">
+		/*sum of number divisble by 7and 9*/
+		function num()
+		{
+		var sum=0;
+		for(i=0;i<=100;i++)
+			{
+			document.write(i+"<br>");
+			if (i%7==0 && i%9==0)
+			{
+               sum=sum+i;
+			}
+		}
+document.write("sum is divisible by 7 and 9 is "+sum);
+}
+	</script>
+</head>
+<body>
+	<form>
+	<input type="button" name="" value="jstclick" onClick="num()">
+</form>
+</body>
+</html>

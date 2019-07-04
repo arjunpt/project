@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+			var subject=new Array("english","maths","chemistry");
+function student(){
+	 	subject[0]=40;
+	 	subject[1]=80;
+	 	subject[2]=100;
+	 	
+	 	document.write(" mark of arun :"+ subject[0]+","+subject[1]+","+ subject[2]+"<br>");
+
+	 	std=subject[0]+subject[1]+subject[2];
+	 	document.write("total is" +std+"<br>" );
+	    subject[0]=90;
+	 	subject[1]=70;
+	 	subject[2]=100;
+	 	
+	 	document.write("mark of vishnu :" + subject[0]+","+subject[1]+","+subject[2]+"<br>");
+	 	std2=subject[0]+subject[1]+subject[2];
+        document.write("total is"+std2+"<br>");
+}
+student();
+      if(std<std2){
+      	std3=std2-std;
+      	document.write("midhun has got "+std3+ " marks more than Arun");
+      }
+     
+
+		
+	</script>
+</head>
+<body>
+	
+
+</body>
+</html>

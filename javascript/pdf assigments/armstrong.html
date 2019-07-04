@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>number</title>
+	<script type="text/javascript">
+		function Num(){
+
+			n = prompt("enter the number");
+            sum=0;
+            temp=n; 
+		while(n!=0) {
+			r=n%10;
+			sum=sum+(r*r*r);
+			n=parseInt(n/10);
+		}
+		if (sum == temp) {
+				alert(temp + " is amstrong.");
+			}
+			else{
+				alert(temp + " is not an amstrong.");
+			}
+
+		
+	}
+	</script>
+</head>
+<body>
+      <input type="button" value="click" onclick="Num()">
+</body>
+</html>

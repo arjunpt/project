@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>number-palindrome</title>
+	<script type="text/javascript">
+		function Num(){
+
+			n = prompt("enter the number");
+            sum=0;
+            temp=n; 
+		while(n!=0) {
+			r=n%10;
+			sum=sum*10+r;
+			n=parseInt(n/10);
+
+		
+		}
+		if (temp == sum) {
+				alert(temp + " is a palindrome.");
+			}
+			else{
+				alert(temp + " is not a palindrome.");
+			}
+		
+	}
+	</script>
+</head>
+<body>
+      <input type="button" value="click" onclick="Num()">
+</body>
+</html>
